@@ -2,16 +2,18 @@ import sys
 import os
 
 project_dir = os.path.dirname(__file__)
-if project_dir not in sys.path:
-    sys.path.append(f'C:/Users/kylew/Documents/')
+# if project_dir not in sys.path:
+    # sys.path.append(f'C:/Users/kylew/Documents/')
 
-from SkewTProject import Bolton
+# from SkewTProject import Bolton
+import Bolton
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.axisartist import Subplot
 from matplotlib . ticker import FuncFormatter , Formatter
 from mpl_toolkits . axisartist . grid_helper_curvelinear import GridHelperCurveLinear 
-from SkewTProject.readsoundings import parse_SPC
+# from SkewTProject.readsoundings import parse_SPC
+from readsoundings import parse_SPC
 
 
 C_to_K = 273.15
@@ -125,7 +127,8 @@ def format_coord (x , y ):
     return " {0:5.1 f } C , {1:5.1 f } mb " . format ( float ( T ) , float ( p ))
 ax . format_coord = format_coord
 
-filepath = '/Users/kylew/Documents/SkewTProject/IAD.txt'
+# filepath = '/Users/kylew/Documents/SkewTProject/IAD.txt'
+filepath = './IAD.txt'
 
 sounding_data = parse_SPC(filepath)
 

@@ -1,0 +1,6 @@
+Need PNG as requested in assignment -4
+Theta_ep exists, is plausibly curved but is too large or small by a small amount: -2 
+Need title on sounding -2
+Theta_e exists, is plausibly curved but is too large or small by greater than the amount where using p0/p instead of p0/(p-e) makes a difference: -2
+
+190/200
